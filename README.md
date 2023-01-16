@@ -22,8 +22,14 @@ $ git clone https://github.com/mylenavendramini/gym-app-nodejs.git
 
 ```bash
 $ npm start
-$ npm install add DB_STRING to .env file
+$ npm install
 ```
+
+## You have to add
+
+Create a .env file and add the following as key: value:
+PORT: 8000 (or any PORT you might prefer)
+DB_STRING: your database URI
 
 ## Packages used
 
@@ -40,4 +46,5 @@ NODE.JS | EXPRESS | MONGODB | PASSPORT
 Take a look at my portfolio at www.mylenavendramini.com.
 
 You can find me on [Linkedin](https://www.linkedin.com/in/mylenavendramini/) and [Twitter](https://twitter.com/mmvendramini).
+
 # gym-app-node
