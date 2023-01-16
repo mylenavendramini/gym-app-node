@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome"> 
+            <h2>Hello <%= user.userName %>!</h2>
+            <a href="/logout"><button class="logout">Logout</button></a>
+        </div>
+       
+    <h1 class="app-title">Workout</h1>
+    <ul class="workout-list">
+    <% workouts.forEach( el => { %>
+        <li class="item" data-id='<%=el._id%>'>
+            <span class='<%= el.completed === true ? 'completed' : 'exercise-not'%>'><%= el.workout %></span>
+            <span class='<%= el.completed === true ? 'completed' : 'not'%>'> Rep: <%= el.repetitions %></span>
+            <span class='<%= el.completed === true ? 'completed' : 'not'%>'>Weight: <%= el.weight %></span>
+            <span class='<%= el.completed === true ? 'completed' : 'not'%>'>Interval: <%= el.interval %></span>
+            <i class="fa fa-trash del"></i>
+            <i class="fa fa-check"></i>
+        </li>
+    <% }) %>    
+    </ul> 
+   
+
+    <h2 class="left">You have <%= left %> exercises left to do.</h2>
+
+    <h2>Add exercises:</h2>
+
+    <form action="/workouts/createWorkout" method='POST'>
+        <!-- <div class="radio-box">
+        <label class="radio-container">
+            <input type="radio" id="workoutA" name="workout" value="WorkoutA" checked>
+            <span class="checkmark">Workout A</span>
+          </label>
+          <label class="radio-container">
+            <input type="radio" id="workoutB" name="workout" value="WorkoutB" checked>
+            <span class="checkmark">Workout B</span>
+          </label>
+          <label class="radio-container">
+            <input type="radio" id="workoutC" name="workout" value="WorkoutC" checked>
+            <span class="checkmark">Workout C</span>
+          </label>
+        </div> -->
+        
+        <input type="text" placeholder="Enter Exercise" name='workoutItem'>
+        <input type="number" placeholder="Enter Number of Repetitions" name='repetitionsItem'>
+        <input type="number" placeholder="Enter Number of Weight" name='weightItem'>
+        <input type="number" placeholder="Enter Number of Interval" name='intervalItem'>
+        <input type="submit">
+    </form>
+   
+    <p class="copyright-workout">
+        &copy; Made by
+        <a href="https://mylenavendramini.com/">Mylena Vendramini</a>
+    </p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
