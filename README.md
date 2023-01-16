@@ -2,6 +2,12 @@
 
 Gym App using the MVC Architecture, Node.js, Express and MongoDB. I implemented "authorization" so the users can sign up, customize and personalize the app.
 
+
+
+https://user-images.githubusercontent.com/93344031/212755484-f29c6ab4-486f-4dda-b87d-3f39511c72e0.mp4
+
+
+
 ## Prerequisites
 
 This project requires NPM. Check if you have it:
