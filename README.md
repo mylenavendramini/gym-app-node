@@ -28,7 +28,7 @@ $ npm install
 ## You have to add
 
 Create a .env file and add the following as key: value:
-PORT: 8000 (or any PORT you might prefer)
+PORT: 8000 (or any PORT you might prefer) |
 DB_STRING: your database URI
 
 ## Packages used
