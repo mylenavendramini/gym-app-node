@@ -1,5 +1,7 @@
 # gym-app-nodejs
 
+(on going)
+
 Gym App using the MVC Architecture, Node.js, Express and MongoDB. I implemented "authorization" so the users can sign up, customize and personalize the app.
 
 ## Prerequisites
@@ -46,5 +48,3 @@ NODE.JS | EXPRESS | MONGODB | PASSPORT
 Take a look at my portfolio at www.mylenavendramini.com.
 
 You can find me on [Linkedin](https://www.linkedin.com/in/mylenavendramini/) and [Twitter](https://twitter.com/mmvendramini).
-
-# gym-app-node
